@@ -28,6 +28,6 @@ class Foxyshot < Formula
   end
 
   service do
-    run: [opt_bin/"foxyshot", "run"]
+    run [opt_bin/"foxyshot", "run"]
   end
 end
