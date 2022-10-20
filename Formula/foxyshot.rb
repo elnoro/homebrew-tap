@@ -11,7 +11,7 @@ class Foxyshot < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/elnoro/foxyshot/releases/download/v0.1.6/foxyshot_0.1.6_darwin_arm64.tar.gz"
-      sha256 "9bba87ed3662ac9b0f96fa2ce58cc9a798fc3e51e83a7197be53f53cdbde17af"
+      sha256 "35755274db3cc855709cade3dd2ee6da5a3a8db7bda16568dd7c2d9883caccf5"
 
       def install
         bin.install "foxyshot"
@@ -19,7 +19,7 @@ class Foxyshot < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/elnoro/foxyshot/releases/download/v0.1.6/foxyshot_0.1.6_darwin_amd64.tar.gz"
-      sha256 "b950d3f5bf59c815c2ef5d942eadb6a640e8a4e2152170bf2779155426bcc257"
+      sha256 "f63f2aaa7ce91700f5646752649bf3ccd6cd8e3417bcd1f31168974ca5c886a2"
 
       def install
         bin.install "foxyshot"
@@ -28,6 +28,6 @@ class Foxyshot < Formula
   end
 
   service do
-    run [opt_bin/"foxyshot", "run"]
+    run [opt_bin/"foxyshot", "run", "-logfile", opt_prefix/"foxyshot.log"]
   end
 end
