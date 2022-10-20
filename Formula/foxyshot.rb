@@ -5,21 +5,21 @@
 class Foxyshot < Formula
   desc "A lightweight tool to upload MacOS screenshots to an S3-compatible provider"
   homepage "https://github.com/elnoro/foxyshot"
-  version "0.1.5"
+  version "0.1.6"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elnoro/foxyshot/releases/download/v0.1.5/foxyshot_0.1.5_darwin_arm64.tar.gz"
-      sha256 "46d189b594c93e8d80aa89587f0e556f8578e8bb9849ef4263de5a3dfc742a7d"
+      url "https://github.com/elnoro/foxyshot/releases/download/v0.1.6/foxyshot_0.1.6_darwin_arm64.tar.gz"
+      sha256 "9bba87ed3662ac9b0f96fa2ce58cc9a798fc3e51e83a7197be53f53cdbde17af"
 
       def install
         bin.install "foxyshot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elnoro/foxyshot/releases/download/v0.1.5/foxyshot_0.1.5_darwin_amd64.tar.gz"
-      sha256 "d0730918d222dbb7a45ec664db908ac2fb22f029d67e5d547a274a7d5dfe28eb"
+      url "https://github.com/elnoro/foxyshot/releases/download/v0.1.6/foxyshot_0.1.6_darwin_amd64.tar.gz"
+      sha256 "b950d3f5bf59c815c2ef5d942eadb6a640e8a4e2152170bf2779155426bcc257"
 
       def install
         bin.install "foxyshot"
