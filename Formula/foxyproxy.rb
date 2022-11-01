@@ -5,21 +5,21 @@
 class Foxyproxy < Formula
   desc "fxpr is a CLI tool to quickly spin up and destroy DigitalOcean servers"
   homepage "https://github.com/elnoro/foxyproxy"
-  version "0.1.2"
+  version "0.1.3"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elnoro/foxyproxy/releases/download/v0.1.2/foxyproxy_0.1.2_darwin_arm64.tar.gz"
-      sha256 "3e25cbd033c84ad31848ac43cafbcd0b907474238bfd12ac885ebfa0a2150f0d"
+      url "https://github.com/elnoro/foxyproxy/releases/download/v0.1.3/foxyproxy_0.1.3_darwin_arm64.tar.gz"
+      sha256 "9880d49d0e49649c013a4704f34e66401ce1bc69d60e5d9b78e4eba2892b2bba"
 
       def install
         bin.install "fxpr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elnoro/foxyproxy/releases/download/v0.1.2/foxyproxy_0.1.2_darwin_amd64.tar.gz"
-      sha256 "775064d72f11abd2e7d807532660d780d1602ed1f9b8b809d6863de1b3902393"
+      url "https://github.com/elnoro/foxyproxy/releases/download/v0.1.3/foxyproxy_0.1.3_darwin_amd64.tar.gz"
+      sha256 "88d076bb0a8118ecce8f37c94316e3b784480262cb877620a7921a5e92748391"
 
       def install
         bin.install "fxpr"
