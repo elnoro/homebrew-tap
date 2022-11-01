@@ -11,7 +11,7 @@ class Foxyproxy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/elnoro/foxyproxy/releases/download/v0.1.3/foxyproxy_0.1.3_darwin_arm64.tar.gz"
-      sha256 "9880d49d0e49649c013a4704f34e66401ce1bc69d60e5d9b78e4eba2892b2bba"
+      sha256 "cdb9b3b1abee44c13f2666de0195f02ea0f69c23757bad548552bedee1f6dc3a"
 
       def install
         bin.install "fxpr"
@@ -19,7 +19,7 @@ class Foxyproxy < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/elnoro/foxyproxy/releases/download/v0.1.3/foxyproxy_0.1.3_darwin_amd64.tar.gz"
-      sha256 "88d076bb0a8118ecce8f37c94316e3b784480262cb877620a7921a5e92748391"
+      sha256 "8648037ba691d40f4ae572753dad41ce7c501290c7b508439e2320acde7d6934"
 
       def install
         bin.install "fxpr"
